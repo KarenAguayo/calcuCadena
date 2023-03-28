@@ -6,9 +6,10 @@ function calculadora(texto) {
     return parseInt(texto);
   }
   else{
-   let num1 = parseInt(numeros[0]);
-   let num2 = parseInt(numeros[1]);
-   var sumando = num1 + num2;
+    var sumando=0;
+    for(var i=0;i<numeros.length;i++){
+      sumando=sumando+parseInt(numeros[i]);
+    }
   }
   
   return sumando;

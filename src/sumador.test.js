@@ -10,4 +10,7 @@ describe("calculadora", () => {
   it("deberia retornar la suma delimitada por , de una cadena", () => {
     expect(calculadora("1,2")).toEqual(3);
   });
+  it("deberia retornar la suma delimitada por , de una cadena de mas de dos numeros", () => {
+    expect(calculadora("1,2,6,4")).toEqual(13);
+  });
 });
