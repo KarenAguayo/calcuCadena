@@ -22,4 +22,7 @@ describe("calculadora", () => {
   it("deberia retornar la suma delimitada por - de dos numeros", () => {
     expect(calculadora("6-4-8")).toEqual(18);
   });
+  it("deberia retornar la suma delimitada por -, de cadena de numeros", () => {
+    expect(calculadora("2,8-10")).toEqual(20);
+  });
 });
