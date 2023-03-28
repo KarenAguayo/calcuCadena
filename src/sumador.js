@@ -1,17 +1,14 @@
-function calculadora(texto) {
-  if(texto=="")
-   return 0;
-  let numeros = texto.split(",");
-  if(numeros.length==1){
-    return parseInt(texto);
+function calculadora(cadena) {
+  var sumando=0;
+  if(cadena === ""){
+    sumando = 0;
   }
-  else{
-    var sumando=0;
-    for(var i=0;i<numeros.length;i++){
-      sumando=sumando+parseInt(numeros[i]);
+  else if(cadena.search(",") != -1 || cadena.search("-") != -1) {
+    const cadenaArray = cadena.split(/[,-]+/);
+    for(var i = 0; i < cadenaArray.length ; i++){
+      sumando = sumando + parseInt(cadenaArray[i]);
     }
-  }
-  
+  } else sumando = parseInt(cadena);
   return sumando;
 }
 
