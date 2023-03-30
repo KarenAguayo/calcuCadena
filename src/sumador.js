@@ -25,11 +25,17 @@ function splitAdd(cadena, separador){
     cadenaArray = cadena.split(/[,-]+/);
   }else cadenaArray = cadena.replaceAll(separador, ',').split(/[,-]+/)
   {
-    for(var i = 0; i < cadenaArray.length ; i++){
-      resultado = resultado + parseInt(cadenaArray[i]);
-    }
-    return resultado;
+    return sumarCadena(cadenaArray);
   }
 }
+function sumarCadena (cadenaArray){
+  var resultado=0;
+  for(var i = 0; i < cadenaArray.length ; i++){
+    resultado = resultado + parseInt(cadenaArray[i]);
+  }
+  return resultado;
+}
+
+
 
 export default calculadora;
