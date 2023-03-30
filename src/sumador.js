@@ -19,7 +19,6 @@ function get_separator(cadena){
 }
 
 function splitAdd(cadena, separador){
-  var resultado = 0;
   var cadenaArray;
   if(separador === ""){
     cadenaArray = cadena.split(/[,-]+/);
