@@ -1,4 +1,4 @@
-function calculadora(cadena) {
+function calculadoraDeCadenas(cadena) {
   var resultado = 0;
   
   if(cadena === ""){
@@ -38,4 +38,4 @@ function sumarCadena (cadenaArray){
 
 
 
-export default calculadora;
+export default calculadoraDeCadenas;
