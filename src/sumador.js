@@ -1,17 +1,15 @@
 function calculadora(cadena) {
-  var resultado = 0;//nombre de variable no muy clara
+  var resultado = 0;
   
   if(cadena === ""){
-    resultado = 0; //nombre de variable
+    return resultado = 0; 
   }
-  else if(cadena.search(",") != -1 || cadena.search("-") != -1) {
+  if(cadena.search(",") != -1 || cadena.search("-") != -1) {
     const cadenaArray = cadena.split(/[,-]+/);
-    resultado = splitAdd(cadena, "");
-  } else if(cadena[0]=== "/"){
-    resultado = get_separator(cadena);
-  }else resultado = parseInt(cadena);
-
-  return resultado;
+    return resultado = splitAdd(cadena, "");
+  } if(cadena[0]=== "/"){
+    return resultado = get_separator(cadena);
+  }else return resultado = parseInt(cadena);
 }
 
 function get_separator(cadena){
